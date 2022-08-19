@@ -1,5 +1,5 @@
 :root {
-    --SilkWhite : rgb(246, 235, 235);
+    --SilkWhite : rgba(246, 235, 235, 0.625);
     --OffBlack : rgb(14, 13, 13);
 }
 
@@ -8,4 +8,112 @@ body {
     margin: 0px;
     padding: 0px;
     background: var(--SilkWhite);
+    overscroll-behavior-x: hidden;
+}
+.navContainer {
+    display: flex;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow:  rgba(0, 0, 0, 0.396) 0px 4px 12px;
+}
+.navBar {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar .left {
+    margin-left: 8vw;
+    color: #f45d1f;
+    font-family: cursive;
+}
+.navBar .right {
+    margin-right: 8vw;
+    display: flex;
+    align-items: center;
+}
+.navitem {
+    text-decoration: none;
+    padding: 8px;
+    margin: 8px;
+    transition: all 0.5s ease;
+    border: solid transparent 3px;
+    font-size: 18px;
+    font-weight: 600;
+    /* color: white; */
+}
+.navitem:hover {
+    border-bottom: solid black 3px;
+
+}
+/* open close butten styling */
+.bar {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    position: relative;
+    height: 33px;
+    width: 30px;
+}
+.bar:focus {
+    outline: 0;
+} 
+.bar .line {
+    background: #de85eb;
+    /* display: none; */
+    height: 3px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    border-radius: 1.5px;
+    transition: transform 0.6s linear;
+}
+
+.bar .line2 {
+    top: auto;
+    bottom: 10px;
+}
+
+
+@media screen and (max-width: 879px) {
+    .navContainer {
+        height: 70px;
+    }
+    .bar{
+        display: block;
+        margin-right: 10vw;
+    }
+    .right{
+        background: #fff;
+        position: absolute;
+        flex-direction: column;
+        margin-right: 0 !important;
+        top: 70px;
+        right: -100%;
+        min-width: 45vw;
+        transition: all .6s ease;
+        min-height: calc(100vh - 70px);       
+    }
+    header.active .right {
+        right: calc(-10vw - 30px);
+    }
+}
+header.active .bar .line1{
+    transform: rotate(-765deg) translateY(5.5px);
+}
+header.active .bar .line2{
+    transform: rotate(765deg) translateY(-5.5px);
+}
+.hero {
+    height: 400vh;
 }
