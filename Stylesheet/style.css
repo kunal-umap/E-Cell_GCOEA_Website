@@ -1,5 +1,5 @@
 :root {
-    --SilkWhite : rgba(246, 235, 235, 0.625);
+    --SilkWhite : #fff;
     --OffBlack : rgb(14, 13, 13);
 }
 
@@ -29,8 +29,8 @@ body {
 }
 .navBar .left {
     margin-left: 8vw;
-    color: #f45d1f;
-    font-family: cursive;
+    color: #000;
+    font-family: sans-serif;
 }
 .navBar .right {
     margin-right: 8vw;
@@ -45,7 +45,8 @@ body {
     border: solid transparent 3px;
     font-size: 18px;
     font-weight: 600;
-    /* color: white; */
+    color: #000;
+    font-family: sans-serif;
 }
 .navitem:hover {
     border-bottom: solid black 3px;
@@ -61,16 +62,16 @@ body {
     border: 0;
     padding: 0;
     position: relative;
-    height: 33px;
+    height: 30px;
     width: 30px;
 }
 .bar:focus {
     outline: 0;
 } 
 .bar .line {
-    background: #de85eb;
+    background: #000;
     /* display: none; */
-    height: 3px;
+    height: 2px;
     width: 20px;
     position: absolute;
     top: 10px;
