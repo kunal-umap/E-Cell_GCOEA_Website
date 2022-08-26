@@ -2,14 +2,15 @@
     --SilkWhite : #fff;
     --OffBlack : rgb(14, 13, 13);
 }
-
+body, html {
+    overflow-x: hidden;
+    }
 body {
     box-sizing: border-box;
     width: 100vw;
     margin: 0px;
     padding: 0px;
     background: var(--SilkWhite);
-    overflow: hidden;
     overflow-x: hidden;
 }
 *::selection {
