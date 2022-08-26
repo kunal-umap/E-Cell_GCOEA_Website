@@ -162,9 +162,10 @@ header.active .bar .line2{
 .homeSocialLink {
     list-style: none;
     position: absolute;
-    left: 8px;
+    left: 4vw;
     bottom: 54px;
     margin: 0;
+    padding: 12px;
 }
 .socialLink {
     margin-bottom: 8px;
