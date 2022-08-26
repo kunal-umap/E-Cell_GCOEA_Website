@@ -8,7 +8,11 @@ body {
     margin: 0px;
     padding: 0px;
     background: var(--SilkWhite);
-    overscroll-behavior-x: hidden;
+    overflow-x: hidden;
+}
+*::selection {
+    color: white;
+    background-color: black;
 }
 .navContainer {
     display: flex;
@@ -100,7 +104,7 @@ body {
         flex-direction: column;
         margin-right: 0 !important;
         top: 70px;
-        right: -100%;
+        right: -200%;
         min-width: 45vw;
         transition: all .6s ease;
         min-height: calc(100vh - 70px);       
@@ -116,5 +120,59 @@ header.active .bar .line2{
     transform: rotate(765deg) translateY(-5.5px);
 }
 .hero {
-    height: 400vh;
+    background: url(../Assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+.mainHeading {
+    font-size: 32px;
+    padding: 18px;
+    padding-bottom: 12px;
+    margin: 2px;
+}
+.tagLine {
+    padding: 0px;
+    margin: 2px;
+}
+.contactBtn {
+    margin: 32px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 110px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    box-shadow:inset 4px 4px 8px rgba(0, 0, 0, 0.223);
+}
+.contactBtn:hover {
+    color: #fff;
+    background: #818183;
+}
+
+
+.homeSocialLink {
+    list-style: none;
+    position: absolute;
+    left: 8px;
+    bottom: 54px;
+    margin: 0;
+}
+.socialLink {
+    margin-bottom: 8px;
+}
+.homeSocialLink li a,
+.homeSocialLink li a:visited {
+    color: #fff;
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
 }
