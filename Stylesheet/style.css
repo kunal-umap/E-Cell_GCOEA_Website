@@ -4,6 +4,7 @@
 }
 body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     }
 body {
     box-sizing: border-box;
@@ -98,6 +99,8 @@ header.active .bar .line1{
 header.active .bar .line2{
     transform: rotate(765deg) translateY(-5.5px);
 }
+
+/* ----------hero section ---------- */
 .hero {
     background: url(../Assets/background.jpg);
     background-size: cover;
@@ -157,7 +160,81 @@ header.active .bar .line2{
     margin: 0px;
 }
 
+/*---------- footer styling -----------*/
 
+footer{
+    padding: 12px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    position: relative;
+
+}
+
+.back-to-top{
+    width: 5rem;
+    height: 6rem;
+    background-color: black;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i{
+    display: block;
+    color: beige;
+    font-size: 2rem;
+    padding: 0.5rem;
+    animation: up 2s infinite;
+}
+.back-to-top a {
+    text-decoration: none;
+}
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 18px;
+    padding-top: 12px;
+}
+.footerMid ul li a,
+.footerRight ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footerMid ul li ,
+.footerRight ul li {
+    text-align: left;
+
+}
+
+/*----------- media queries ------------*/
+
+@media screen and (max-width: 461px) {
+    .footerContent {
+        flex-wrap: wrap;
+    }
+    .footerMid ul h3,
+    .footerRight ul h3 {
+        font-size: 15px;
+    }
+    .footerMid ul li a,
+.footerRight ul li a{
+    font-size: 12px;
+}
+}
+@media screen and (max-width: 354px) {
+   .footerLeft h2{
+    padding-top: 12px;
+    font-size: 22px;
+   }
+   .footerLeft p {
+    font-size: 14px;
+   }
+}
 @media screen and (max-width: 879px) {
     .navContainer {
         height: 70px;
