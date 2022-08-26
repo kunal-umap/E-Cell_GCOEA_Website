@@ -1,35 +1,32 @@
 :root {
-    --SilkWhite : rgb(246, 235, 235);
+    --SilkWhite : #fff;
     --OffBlack : rgb(14, 13, 13);
 }
 *{
     box-sizing: border-box;
 }
-.background img{
-    position: absolute;
-    position: fixed;
-    z-index: -1;
-    width: 100vw;
-    min-height: 100%;
-}
+
 .WhatIsEcel{
+    width: 90%;
+    margin: auto;
+    background: #f3f3f3;
+    border-radius: 4px;
+    background-color: #fff;
     display: flex;
     height: auto;
-    min-height: 80vh;
+    min-height: 90vh;
     max-height:fit-content;
     color: var(--OffBlack);
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-top: 10vh;
+    padding-top: 10vh;
     
 }
 .ecell-div{
     width: auto;
 }
 .E_cell{
-
-    color: white;
     margin-bottom: 40px;
     width: 100vw;
     margin-top: 30px;
@@ -42,7 +39,6 @@
 }
 
 .E_cell_defination{
-    color: white;
    font-size: large;
    display: inline-flex;
    justify-content: center;
@@ -52,33 +48,34 @@
    margin-left: 15%;
    margin-right: 15%;
 }
-.E_cell span{
+.MissAndViss span{
     color: gold;
 }
 .MissAndViss{
-    background-color: gray;
-    min-height: 80vh;
+    padding-top: 5vh;
+    background-image: url('../Assets/background_courses.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
     height: auto;
-    color: var(--OffBlack);
+    color: white;
     display: flexbox;
 }
 .viss{
-    
     min-height: 40vh;
     height: auto;
-    color: var(--OffBlack);
+    color: white;
     display: flexbox;
 }
 
 .miss{
     min-height: 40vh;
     height: auto;
-    color: var(--OffBlack);
+    color: white;
     display: flexbox;
 }
 .vision{
     font-size: xx-large;
-    margin-bottom: 40px;
     width: 100%;
    font-size: xx-large;
    display: flex;
@@ -89,7 +86,6 @@
    align-content: center;
 }
 .mission{
-    margin-bottom: 40px;
     width: 100%;
    font-size: xx-large;
    text-decoration: dashed;
@@ -119,12 +115,34 @@
    margin-right: 15%;
    font-size: x-large;
 }
-
-
-.animation div{
-    height:0vh;
-    background-color: gold;
-    width:10px;
-    position: absolute;
-    left: 10%;
-}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container .card i {
+    color: #fff;
+    font-size: 50px;
+  }
+  .container .card p.counter {
+    font-size: 60px;
+    margin: 5px;
+  }
+  .container .card p.label {
+    margin: 5px;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    .card {
+      padding: 20px;
+    }
+  }
+  
