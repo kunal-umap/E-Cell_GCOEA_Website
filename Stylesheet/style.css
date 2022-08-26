@@ -103,7 +103,7 @@ body {
         position: absolute;
         flex-direction: column;
         margin-right: 0 !important;
-        top: 70px;
+        top: 69px;
         right: -200%;
         min-width: 45vw;
         transition: all .6s ease;
