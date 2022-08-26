@@ -2,10 +2,16 @@
     --SilkWhite : #fff;
     --OffBlack : rgb(14, 13, 13);
 }
+body, html  {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    overflow-x:hidden;
+}
 body, html {
-    overflow-x: hidden;
+    box-sizing: border-box;
     scroll-behavior: smooth;
-    }
+}
 body {
     box-sizing: border-box;
     width: 100vw;
@@ -27,6 +33,7 @@ body {
     padding: 0px;
     margin: 0px;
     box-shadow:  rgba(0, 0, 0, 0.151) 0px 4px 12px;
+    z-index: 10;
 }
 .navBar {
     flex: 1;
@@ -102,6 +109,7 @@ header.active .bar .line2{
 
 /* ----------hero section ---------- */
 .hero {
+    position: relative;
     background: url(../Assets/background.jpg);
     background-size: cover;
     background-position: center;
