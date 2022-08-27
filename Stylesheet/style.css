@@ -92,7 +92,7 @@ body {
     top: 10px;
     left: 5px;
     border-radius: 1.5px;
-    transition: transform 0.6s linear;
+    transition: transform 0.4s linear;
 }
 
 .bar .line2 {
@@ -101,10 +101,10 @@ body {
 }
 
 header.active .bar .line1{
-    transform: rotate(-765deg) translateY(5.5px);
+    transform: rotate(-405deg) translateY(5.5px);
 }
 header.active .bar .line2{
-    transform: rotate(765deg) translateY(-5.5px);
+    transform: rotate(405deg) translateY(-5.5px);
 }
 
 /* ----------hero section ---------- */
@@ -244,7 +244,7 @@ footer{
     padding: 0;
     margin: 0;
     padding-top: 15px;
-    z-index: 9999;
+    z-index: 8;
     position: absolute;
     width: 100%;
     margin-top: -40px;
