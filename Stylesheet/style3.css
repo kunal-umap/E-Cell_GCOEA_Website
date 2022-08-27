@@ -1,6 +1,18 @@
 html{
     box-sizing: border-box;
 }
+.whyJoin{
+    margin-top: 40px;
+    padding: 8px;
+    padding-top: 40px;
+    background: #000;
+    padding-bottom: 60px;
+}
+.whyJoin .container {
+    background: #000;
+    color: #f3f3f3;
+    text-align: center;
+}
 .whyjoin {
     padding-left: auto;
     padding-right: auto;
@@ -12,10 +24,13 @@ html{
     text-align: center;
 }
 .para{
-    font-size: 1.2rem;
+    font-size: 13px;
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
 }
 .fbox {
-    /* width: 70%; */
+    color: #000;
     margin: auto;
 }
 .fwidth{
@@ -30,8 +45,8 @@ html{
     display: flex;
     width: 33%;
     text-align: center;
-    padding-top: .7rem;
-    padding-bottom: 0.7rem;
+    padding-top: .5rem;
+    padding-bottom: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
@@ -53,6 +68,7 @@ html{
     box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.2);
 }
 .faq{
+    margin-top: 30px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -141,3 +157,4 @@ html{
         width: 100%;
     }
 }
+

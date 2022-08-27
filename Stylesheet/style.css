@@ -171,6 +171,7 @@ header.active .bar .line2{
 /*---------- footer styling -----------*/
 
 footer{
+  margin-top: 40px;
     padding: 12px;
     background-color: black;
     color: #fff;
