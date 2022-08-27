@@ -54,7 +54,7 @@ $(".step").click(function () {
       const c = +element.innerText;
       if (c < value) {
         element.innerText = `${Math.ceil(c + increment)}`;
-        setTimeout(updateCounter, 100);
+        setTimeout(updateCounter, 10);
       } else {
         element.innerText = value;
       }
