@@ -1,0 +1,143 @@
+html{
+    box-sizing: border-box;
+}
+.whyjoin {
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+}
+.text-centre {
+    text-align: center;
+}
+.para{
+    font-size: 1.2rem;
+}
+.fbox {
+    /* width: 70%; */
+    margin: auto;
+}
+.fwidth{
+    width: 60%;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.properties{
+    display: flex;
+    width: 33%;
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #f3f3f3;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.1);
+}
+.whyjoin1{
+    width: 100%;
+    padding: 1rem;
+}
+.svg1{
+    padding-left: 1rem;
+    height: 40px;
+}
+.properties:hover{
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.2);
+}
+.faq{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.container2{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.accordian-item{
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.1);
+    background-color: #f3f3f3;
+}
+.accordian-link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: black;
+}
+.accordian-link i{
+    padding: .5rem;
+}
+.accordian-item:hover{
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.2);
+}
+.accordian-link .ion-md-remove{
+    display: none;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms;
+    background-color: rgb(227, 227, 227);
+    border-radius: 2rem;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: black;
+}
+.accordian-item:target .answer{
+    max-height: 20rem;
+}
+.accordian-item:target .accordian-link .ion-md-add{
+    display: none;
+}
+.accordian-item:target .accordian-link .ion-md-remove{
+    display: block;
+}
+.head2{
+    font-size: 2rem;
+}
+
+@media (max-width:1200px) and (min-width:1039px){
+    .fwidth{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1038px){
+    .fbox{
+        display: flex;
+        width: 70%;
+    }
+    .properties{
+        width: 100%;
+    }
+}
