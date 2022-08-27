@@ -10,11 +10,11 @@
   padding-bottom: 50px;
 }
 .WhatIsEcel {
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
   background: #f3f3f3;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: black;
   display: flex;
   height: auto;
   min-height: 80vh;
@@ -24,6 +24,7 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   padding-bottom: 60px;
+  color: #fff;
 }
 
 .ecell-div {
@@ -56,12 +57,13 @@
 }
 
 .MissAndViss span {
-  color: gold;
+  color: white;
 }
 
 .MissAndViss {
   padding-top: 5vh;
-  background-image: url('../Assets/background_courses.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 1.5),
+    rgba(0, 0, 0, 0.6)), url(../Assets/bg1.jpg) no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   min-height: 90vh;

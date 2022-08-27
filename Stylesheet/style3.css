@@ -14,7 +14,6 @@ html{
     rgba(0, 0, 0, 1.5)), url(../Assets/why\ join.jpg) no-repeat center center/cover;
     background-size: cover;
     background-position: center;
-    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
